@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1667492485 source:d:\zad3l5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ff.h"
+
+1667490015 d:\zad3l5\ff.h
+
