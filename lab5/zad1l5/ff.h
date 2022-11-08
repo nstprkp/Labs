@@ -1,7 +1,7 @@
 #ifndef FF_H_INCLUDED
 #define FF_H_INCLUDED
 
-//проверка ввода количества элементов массива
+//РїСЂРѕРІРµСЂРєР° РІРІРѕРґР° РєРѕР»РёС‡РµСЃС‚РІР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 int input_check()
 {
     int val;
@@ -12,7 +12,7 @@ int input_check()
     return val;
 }
 
-//проверка ввода элементов массива
+//РїСЂРѕРІРµСЂРєР° РІРІРѕРґР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 float input_check_mas()
 {
     float val;
@@ -23,7 +23,7 @@ float input_check_mas()
     return val;
 }
 
-//ввод массива
+//РІРІРѕРґ РјР°СЃСЃРёРІР°
 void input_mas(float* m, int n)
 {
     for (int i=0; i<n; i++) {
@@ -31,25 +31,38 @@ void input_mas(float* m, int n)
     }
 }
 
-//выделение памяти для массива
+//РІС‹РґРµР»РµРЅРёРµ РїР°РјСЏС‚Рё РґР»СЏ РјР°СЃСЃРёРІР°
 int* memory_alloc(int n)
 {
     int *val=(float*)malloc(n * sizeof(float));
     return val;
 }
 
-//Удаление
+//РЈРґР°Р»РµРЅРёРµ
 void deleteElement(float** array, int* size, int index)
 {
     *size = *size - 1;
-
     for (int i = index; i < *size; i++)
         (*array)[i] = (*array)[i + 1];
-
     *array = realloc(*array, *size * sizeof(float));
 }
 
-//Вывод массива
+void delete_check(float *mas, int* n)
+{
+    for(int i=0; i<*n; i++){
+        float b=(int)*(mas+i);
+        if (*(mas+i)-b==0) {
+            for (int j=i; j<*n; j++){
+                *(mas+j)=*(mas+j+1);
+            }
+            *n=*n-1;
+            i--;
+        }
+    }
+    mas = (float*)realloc(mas, *n * sizeof(float));
+}
+
+//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР°
 void output(float* m,int n)
 {
     printf("New array:\n");
