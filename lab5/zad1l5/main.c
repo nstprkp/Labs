@@ -15,10 +15,7 @@ int main()
     printf("Enter array:\n");
     input_mas(mas,n);
 
-    for(int i=0; i<n; i++){
-        float b=(int)mas[i];
-        if (mas[i]-b==0) {deleteElement(&mas, &n, i); i--;}
-    }
+    delete_check(mas,&n);
 
     output(mas,n);
     free(mas);
