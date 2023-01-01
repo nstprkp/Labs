@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1671087872 source:c:\users\Настя\labi\main.c
+	"header.h"
+
+1671087876 source:c:\users\Настя\labi\sources.c
+	"header.h"
+
+1671517681 c:\users\Настя\labi\header.h
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+
