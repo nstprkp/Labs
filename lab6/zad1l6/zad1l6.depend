@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1668667403 source:d:\zad1l6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<unistd.h>
+	"ff.h"
+
+1668352458 d:\zad1l6\ff.h
+
