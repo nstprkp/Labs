@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1669876230 source:d:\zad1l7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1669646671 d:\zad1l7\ff.h
+
+1669875963 d:\zad1l7\func.h
+
+1669876170 source:d:\zad1l7\func.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
